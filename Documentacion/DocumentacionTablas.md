@@ -13,7 +13,7 @@ La siguiente base de datos elabora en función a que el cliente puede realizar c
 # Diagrama entidad-relación de la base de datos
 A continuación, se muestra el diagrama entidad relación del modelo Bricks & Clicks, en el cual busca satisfacer el principal giro de este modelo.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.004.png)
+![](Imagenes/Modelo_entidad_relacion.png)
 
 Principalmente este diagrama consta de las entidades: Cliente, Órdenes, Productos, Envíos, Métodos de pago y sucursal, todas estas estas entidades se relacionan de manera 1 a muchos, y muchos a muchos, para este último caso se crearán tablas para lograr estas relaciones. 
 # Descripción de tablas
@@ -22,27 +22,27 @@ Seguidamente, se mostrarán las tablas que forman parte de la base de datos, ins
 ## Tabla Clientes
 Esta **entidad** almacena la información de los clientes que realizan compras tanto en tiendas físicas como en línea**.** Esta tabla contiene los campos de nombre de los clientes, email, telefono, dirección y por último su respectivo identicador.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.005.png)
+![](Imagenes/TablaClientes.png)
 
 ## Tabla Productos
 Esta tabla contiene toda la información de los productos, como lo es el nombre del producto, una breve descripción de este, marca, precio y su identificador
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.006.png)
+![](Imagenes/TablaProductos.png)
 
 ## Tabla Sucursales
 Esta tabla almacena la información sobre las diferentes sucursales tanto físicas como en línea de la empresa, permitiendo gestionar su ubicación y detalles relevantes.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.007.png)
+![](Imagenes/TablaSucursales.png)
 
 ## Tabla Inventario
 Esta tabla contiene información sobre la disponibilidad y reservas de productos en cada una de las sucursales. Esta tabla nace de la relación muchos a muchos de surcursales y productos. La tabla contiene una clave concatenada, el cual une el id\_producto y id\_surcursal con el fin de identificar que productos hay entre cada surcursal, además de contar con la catidad disponible en el inventario y la cantidad reservada que se encuentra para los pedidos hechos de cada producto.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.008.png)
+![](Imagenes/TablaInventario.png)
 
 ## Tabla Órdenes
 Registra los pedidos realizados por los clientes, ya sea en línea o en una surcursal física.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.009.png)
+![](Imagenes/TablaOrdenes.png)
 ### Campos:
 - **id\_orden (Clave primaria): INT** 
 - **id\_cliente (Clave foránea): INT -** Referencia al cliente que realiza el pedido, vinculado a la tabla Clientes.
@@ -68,7 +68,7 @@ Registra los pedidos realizados por los clientes, ya sea en línea o en una surc
 ## Tabla Detalles -Órdenes
 Esta tabla almacena los detalles de cada orden realizada por los clientes, incluyendo los productos y cantidades. Esta tabla cuenta con un identificador, dos llave foraneas hacia las tabla de orden y producto respectivamente, cantidad y el precio unitario del producto.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.010.png)
+![](Imagenes/TablaDetalleOrdenes.png)
 ### Campos:
 - **id\_orden (Clave foránea): INT -** Referencia al número de orden, vinculado a la tabla ordenes
 - **id\_producto (Clave foránea): INT -** Referencia al producto, vinculado a la tabla de productos
@@ -76,7 +76,7 @@ Esta tabla almacena los detalles de cada orden realizada por los clientes, inclu
 ## Tabla Facturación
 Esta tabla contiene la información relacionada con la facturación de las órdenes, el monto y a que orden y metodo de pago hace referencia el cliente. 
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.011.png)
+![](Imagenes/TablaFacturacion.png)
 ### Campos:
 - **id\_factura (Clave primaria): INT** 
 - **id\_orden (Clave foránea): INT -** Referencia al número de orden, vinculado a la tabla ordenes
@@ -87,7 +87,7 @@ Esta tabla contiene la información relacionada con la facturación de las órde
 ## Tabla Métodos\_Pago
 Esta tabla almacena los metodos de pago con los que se puede pagar, también la fecha y el monto.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.012.png)
+![](Imagenes/TablaMetodosPago.png)
 ### Campos:
 - **id\_metodo (Clave primaria) INT** 
 - **Nom\_metodo: VARCHAR(50) -** Nombre del método
@@ -96,7 +96,7 @@ Esta tabla almacena los metodos de pago con los que se puede pagar, también la 
 ## Tabla Envíos
 Esta tabla almacena los envios. El cliente elige a que dirección llegue su producto. Esta tabla cuenta con su identificador, el id\_orden que es una llave foranea que hace relación a la orden, dirección, fecha de envio, estuatus y el costo del mismo.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.013.png)
+![](Imagenes/TablaEnvio.png)
 ### Campos:
 - **id\_envio (Clave primaria) INT**
 - **id\_orden (Clave foránea): INT -** Referencia al número de orden, vinculado a la tabla ordenes
