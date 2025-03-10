@@ -1,13 +1,7 @@
 ﻿Ariadne Selena Romero Rivero
-
 Universidad Autónoma de Nuevo León
-
 Facultad Ciencias Físico Matemáticas
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.001.png)![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.002.png)![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.003.png)
-
-#	
-#
 # Introducción
 El **modelo Bricks & Clicks** es una estrategia empresarial que integra la venta en **tiendas físicas** (Bricks) con la venta en **plataformas digitales** (Clicks). Este enfoque permite a las empresas ofrecer una experiencia de compra más completa y accesible, aprovechando las ventajas de ambos canales. En un mundo donde los consumidores buscan conveniencia y variedad, este modelo se ha vuelto cada vez más relevante, ya que opera tanto un establecimiento físico como una tienda en línea, lo que les permite llegar a un público más amplio y adaptarse a las preferencias cambiantes de los consumidores.
 
@@ -19,7 +13,9 @@ La siguiente base de datos elabora en función a que el cliente puede realizar c
 # Diagrama entidad-relación de la base de datos
 A continuación, se muestra el diagrama entidad relación del modelo Bricks & Clicks, en el cual busca satisfacer el principal giro de este modelo.
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.004.png)Principalmente este diagrama consta de las entidades: Cliente, Órdenes, Productos, Envíos, Métodos de pago y sucursal, todas estas estas entidades se relacionan de manera 1 a muchos, y muchos a muchos, para este último caso se crearán tablas para lograr estas relaciones. 
+![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.004.png)
+
+Principalmente este diagrama consta de las entidades: Cliente, Órdenes, Productos, Envíos, Métodos de pago y sucursal, todas estas estas entidades se relacionan de manera 1 a muchos, y muchos a muchos, para este último caso se crearán tablas para lograr estas relaciones. 
 # Descripción de tablas
 Seguidamente, se mostrarán las tablas que forman parte de la base de datos, inspirada en el modelo entidad relación anteriormente mostrado. Como se puede observar existen tablas que salen de la unión de mucho a muchos, entre otras tablas, estas uniones dentro del modelo se les dio un nombre por encima, sin embargo, en esta sección se le dará una descripción más detallada:
 
