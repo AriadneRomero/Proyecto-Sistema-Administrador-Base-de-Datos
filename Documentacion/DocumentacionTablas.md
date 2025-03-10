@@ -4,10 +4,6 @@ Universidad Autónoma de Nuevo León
 
 Facultad Ciencias Físico Matemáticas
 
-![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.001.png)![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.002.png)![](Aspose.Words.2d3b3e2e-a66a-4db1-9cc2-3a00acfca0c4.003.png)
-
-#	
-#
 # Introducción
 El **modelo Bricks & Clicks** es una estrategia empresarial que integra la venta en **tiendas físicas** (Bricks) con la venta en **plataformas digitales** (Clicks). Este enfoque permite a las empresas ofrecer una experiencia de compra más completa y accesible, aprovechando las ventajas de ambos canales. En un mundo donde los consumidores buscan conveniencia y variedad, este modelo se ha vuelto cada vez más relevante, ya que opera tanto un establecimiento físico como una tienda en línea, lo que les permite llegar a un público más amplio y adaptarse a las preferencias cambiantes de los consumidores.
 
