@@ -16,11 +16,5 @@ La base de datos está diseñada con un **modelo relacional** e incluye:
 - **Facturación y Envíos**: Gestión de pagos y logística de entrega.  
 
 ### 🔹 **Tecnologías Utilizadas**  
-🛠 **SQL (MySQL)** | **Stored Procedures** | **Funciones SQL** | **Diagrama ERD**  
-
-## 📜 **Uso**  
-
-1️⃣ **Importar la base de datos**  
-```sql
-SOURCE bricks_clicks.sql;
+🛠 **SQL (MySQL)** | **Stored Procedures** | **Funciones SQL** | **Diagrama ERD** 
 
