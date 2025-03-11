@@ -1,6 +1,3 @@
-# Proyecto-Sistema-Administrador-Base-de-Datos
- Proyecto_final
-
  # 🏪📦 Base de Datos - Bricks & Clicks
 
 Este proyecto implementa un modelo de base de datos para un negocio **Bricks & Clicks**, combinando ventas en tiendas físicas y comercio electrónico. La base de datos gestiona clientes, productos, órdenes, inventario, facturación y envío, asegurando eficiencia en la administración y optimización de recursos.
